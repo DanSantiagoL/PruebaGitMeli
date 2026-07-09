@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27d3966b-b6bc-4e2c-9b44-4c2547cb2f04" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.169644768412926" />
+      <entry key="MS500" value="2.175085969839585" />
+      <entry key="S2" value="2.8919899948458676" />
+      <entry key="S5" value="3.7065082345961864" />
+      <entry key="S10" value="5.066021883593513" />
+      <entry key="S30" value="8.393768035149257" />
+      <entry key="S60" value="10.245608869271667" />
+      <entry key="M2" value="11.482539852694035" />
+      <entry key="M5" value="12.354994483054162" />
+      <entry key="M10" value="12.670754567094825" />
+      <entry key="M15" value="12.778972943541872" />
+      <entry key="M30" value="12.888713320080878" />
+      <entry key="H1" value="12.944161837027222" />
+      <entry key="H2" value="12.972032019448429" />
+      <entry key="H4" value="12.986003760704248" />
+      <entry key="D1" value="12.997665590135185" />
+      <entry key="W1" value="12.99966647113568" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.6790411747686275" />
+      <entry key="MS500" value="2.0232952761853635" />
+      <entry key="S2" value="2.808150187511409" />
+      <entry key="S5" value="3.610394516572124" />
+      <entry key="S10" value="4.951516307535214" />
+      <entry key="S30" value="8.272393713534267" />
+      <entry key="S60" value="10.156608021333739" />
+      <entry key="M2" value="11.427978719576759" />
+      <entry key="M5" value="12.33024155630988" />
+      <entry key="M10" value="12.65784019773489" />
+      <entry key="M15" value="12.77023985676727" />
+      <entry key="M30" value="12.884284001179399" />
+      <entry key="H1" value="12.94193128932528" />
+      <entry key="H2" value="12.970912748993296" />
+      <entry key="H4" value="12.985443123242543" />
+      <entry key="D1" value="12.997572011096645" />
+      <entry key="W1" value="12.999653099282789" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Fx4GDH82p5xH5lUqf0A1u3jQ0y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Saludador.executor": "Run",
+    "JUnit.SaludadorTest.saludar_conNombreAna_devuelveHolaAna.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.WorkshopApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/slopezisaza/Documents/EjerciciosMeli/workshop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "33f2ee11f1130c5c6e11061cc91d9b9a",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.meli.workshop.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SaludadorTest.saludar_conNombreAna_devuelveHolaAna">
+    <configuration name="Saludador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.meli.workshop.service.Saludador" />
+      <module name="workshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.meli.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaludadorTest.saludar_conNombreAna_devuelveHolaAna" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="workshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.meli.workshop.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.meli.workshop.service" />
+      <option name="MAIN_CLASS_NAME" value="com.meli.workshop.service.SaludadorTest" />
+      <option name="METHOD_NAME" value="saludar_conNombreAna_devuelveHolaAna" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkshopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="workshop" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.meli.workshop.WorkshopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SaludadorTest.saludar_conNombreAna_devuelveHolaAna" />
+        <item itemvalue="Application.Saludador" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27d3966b-b6bc-4e2c-9b44-4c2547cb2f04" name="Changes" comment="" />
+      <created>1783003288679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783003288679</updated>
+      <workItem from="1783003289749" duration="4361000" />
+      <workItem from="1783107943300" duration="741000" />
+      <workItem from="1783109061801" duration="1591000" />
+      <workItem from="1783366970814" duration="8568000" />
+      <workItem from="1783624999229" duration="1182000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
