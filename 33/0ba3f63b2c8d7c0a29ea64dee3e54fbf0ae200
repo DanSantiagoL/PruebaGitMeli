@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "330ba3f63b2c8d7c0a29ea64dee3e54fbf0ae200",
+  "prompts": {},
+  "humans": {
+    "h_3c4320809d6c0e": {
+      "author": "DanSantiagoL <santiagolopez10d@gmail.com>"
+    }
+  }
+}
