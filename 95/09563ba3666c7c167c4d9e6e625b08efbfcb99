@@ -1,0 +1,28 @@
+Testing/src/main/java/com/Testing/clases/FizzBuzz.java
+  h_3c4320809d6c0e 1-10
+Testing/src/main/java/com/Testing/clases/Saludador.java
+  h_3c4320809d6c0e 1-7
+Testing/src/main/java/com/Testing/clases/PasareladePago.java
+  h_3c4320809d6c0e 1-5
+Testing/src/test/java/com/Testing/clases/PedidoServiceTest.java
+  h_3c4320809d6c0e 1-32
+Testing/src/main/java/com/Testing/clases/PedidoService.java
+  h_3c4320809d6c0e 1-14
+Testing/src/test/java/com/Testing/clases/FizzBuzzTest.java
+  h_3c4320809d6c0e 1-29
+Testing/src/test/java/com/Testing/clases/SaludadorTest.java
+  h_3c4320809d6c0e 1-17
+Testing/pom.xml
+  h_3c4320809d6c0e 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "9509563ba3666c7c167c4d9e6e625b08efbfcb99",
+  "prompts": {},
+  "humans": {
+    "h_3c4320809d6c0e": {
+      "author": "DanSantiagoL <santiagolopez10d@gmail.com>"
+    }
+  }
+}
