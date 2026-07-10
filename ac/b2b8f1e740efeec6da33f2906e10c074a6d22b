@@ -1,0 +1,22 @@
+PrimeraEntidad/src/main/java/com/PrimeraEntidad/controller/ProductoController.java
+  h_3c4320809d6c0e 4,6-9,21,24,26,56-64
+PrimeraEntidad/src/main/java/com/PrimeraEntidad/dto/ProductoDTO.java
+  h_3c4320809d6c0e 1-27
+PrimeraEntidad/pom.xml
+  h_3c4320809d6c0e 59-67
+PrimeraEntidad/src/main/java/com/PrimeraEntidad/clases/Producto.java
+  h_3c4320809d6c0e 8-9,18,22,48,52
+PrimeraEntidad/src/main/java/com/PrimeraEntidad/service/ProductoService.java
+  h_3c4320809d6c0e 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "acb2b8f1e740efeec6da33f2906e10c074a6d22b",
+  "prompts": {},
+  "humans": {
+    "h_3c4320809d6c0e": {
+      "author": "DanSantiagoL <santiagolopez10d@gmail.com>"
+    }
+  }
+}
