@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
+import java.math.BigDecimal;
+
 @Entity
 public class Producto {
     @Id @GeneratedValue
@@ -13,11 +15,11 @@ public class Producto {
     private String nombre;
 
     private String categoria;
-    private Double precio;
+    private BigDecimal precio;
 
     public Producto(){
     }
-    public Producto(String nombre, String categoria, Double precio) {
+    public Producto(String nombre, String categoria, BigDecimal precio) {
         this.nombre = nombre;
         this.categoria = categoria;
         this.precio = precio;
@@ -43,11 +45,11 @@ public class Producto {
         this.categoria = categoria;
     }
 
-    public Double getPrecio() {
+    public BigDecimal getPrecio() {
         return precio;
     }
 
-    public void setPrecio(Double precio) {
+    public void setPrecio(BigDecimal precio) {
         this.precio = precio;
     }
 }

@@ -1,7 +1,12 @@
 package com.PrimeraEntidad.controller;
 
 import com.PrimeraEntidad.clases.Producto;
+import com.PrimeraEntidad.dto.ProductoDTO;
 import com.PrimeraEntidad.repository.ProductoRepository;
+import com.PrimeraEntidad.service.ProductoService;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -13,10 +18,12 @@ import java.util.Optional;
 @RequestMapping("/productos")
 public class ProductoController {
 
+    private final ProductoService productoService;
     private final ProductoRepository productoRepository;
 
-    public ProductoController(ProductoRepository productoRepository) {
+    public ProductoController(ProductoRepository productoRepository,ProductoService productoService) {
         this.productoRepository = productoRepository;
+        this.productoService = productoService;
     }
 
     @GetMapping
@@ -46,4 +53,13 @@ public class ProductoController {
     ) {
         return productoRepository.findActivos(categoria, pageable);
     }
+
+    @PostMapping("/crearDTO")
+    public ResponseEntity<ProductoDTO> crear(
+        @Valid @RequestBody ProductoDTO dto) {
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(productoService.crear(dto));
+    }
+
 }
