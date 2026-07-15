@@ -1,0 +1,22 @@
+testing-workshop-ejercicios/src/test/java/com/mercadolibre/ejercicios/tdd/PiedraPapelTijeraTest.java
+  h_3c4320809d6c0e 1-57
+testing-workshop-ejercicios/src/test/java/com/mercadolibre/ejercicios/tareas/TareaControllerTest.java
+  h_3c4320809d6c0e 1-58
+testing-workshop-ejercicios/src/main/java/com/mercadolibre/ejercicios/tdd/PiedraPapelTijera.java
+  h_3c4320809d6c0e 1-20
+testing-workshop-ejercicios/src/test/java/com/mercadolibre/ejercicios/carrito/CarritoTest.java
+  h_3c4320809d6c0e 1-93
+testing-workshop-ejercicios/src/test/java/com/mercadolibre/ejercicios/dados/JuegoDeDadosTest.java
+  h_3c4320809d6c0e 1-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c7626d1832c9208d6d62d00644437a6611a00c98",
+  "prompts": {},
+  "humans": {
+    "h_3c4320809d6c0e": {
+      "author": "DanSantiagoL <santiagolopez10d@gmail.com>"
+    }
+  }
+}
