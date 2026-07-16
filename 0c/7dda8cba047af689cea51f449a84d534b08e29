@@ -1,0 +1,14 @@
+PrimeraEntidad/src/main/java/com/PrimeraEntidad/clases/Producto.java
+  h_3c4320809d6c0e 3-4,7,10,12,55-68
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "0c7dda8cba047af689cea51f449a84d534b08e29",
+  "prompts": {},
+  "humans": {
+    "h_3c4320809d6c0e": {
+      "author": "DanSantiagoL <santiagolopez10d@gmail.com>"
+    }
+  }
+}
