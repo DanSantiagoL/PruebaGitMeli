@@ -1,15 +1,15 @@
 package com.PrimeraEntidad.clases;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.ToString;
 
 import java.math.BigDecimal;
+import java.util.Objects;
 
 @Entity
+@ToString
 public class Producto {
-    @Id @GeneratedValue
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
     private String nombre;
@@ -51,5 +51,20 @@ public class Producto {
 
     public void setPrecio(BigDecimal precio) {
         this.precio = precio;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Producto producto = (Producto) o;
+        return Objects.equals(nombre, producto.nombre) &&
+                Objects.equals(categoria, producto.categoria) &&
+                Objects.equals(precio, producto.precio);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre, categoria, precio);
     }
 }
