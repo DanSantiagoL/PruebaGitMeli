@@ -5,21 +5,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FizzBuzzTest {
 
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String FIZZBUZZ = "FizzBuzz";
+
     FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
     void multiploDe3DevuelveFizz() {
-        assertEquals("Fizz", fizzBuzz.fizzbuzz(3));
+        assertEquals(FIZZ, fizzBuzz.fizzbuzz(3));
     }
 
     @Test
     void multiploDe5DevuelveBuzz() {
-        assertEquals("Buzz", fizzBuzz.fizzbuzz(5));
+        assertEquals(BUZZ, fizzBuzz.fizzbuzz(5));
     }
 
     @Test
     void multiploDe3y5DevuelveFizzBuzz() {
-        assertEquals("FizzBuzz", fizzBuzz.fizzbuzz(15));
+        assertEquals(FIZZBUZZ, fizzBuzz.fizzbuzz(15));
     }
 
     @Test

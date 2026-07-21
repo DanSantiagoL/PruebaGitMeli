@@ -13,7 +13,7 @@ import static org.mockito.Mockito.*;
 class PedidoServiceTest {
 
     @Mock
-    PasareladePago pasarela;
+    PasarelaDePago pasarela;
 
     @InjectMocks
     PedidoService svc;

@@ -1,5 +1,5 @@
 package com.Testing.clases;
 
-public interface PasareladePago {
+public interface PasarelaDePago {
     boolean cobrar(double monto);
 }

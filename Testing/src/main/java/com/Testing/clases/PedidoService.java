@@ -2,9 +2,9 @@ package com.Testing.clases;
 
 public class PedidoService {
 
-    private PasareladePago pasarela;
+    private PasarelaDePago pasarela;
 
-    public PedidoService(PasareladePago pasarela) {
+    public PedidoService(PasarelaDePago pasarela) {
         this.pasarela = pasarela;
     }
 
