@@ -1,8 +1,8 @@
-package com.PrimeraEntidad.controller;
+package com.primeraentidad.controller;
 
-import com.PrimeraEntidad.clases.Producto;
-import com.PrimeraEntidad.dto.ProductoDTO;
-import com.PrimeraEntidad.service.ProductoService;
+import com.primeraentidad.clases.Producto;
+import com.primeraentidad.dto.ProductoDTO;
+import com.primeraentidad.service.ProductoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

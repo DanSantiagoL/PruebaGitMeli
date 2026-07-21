@@ -1,4 +1,4 @@
-package com.PrimeraEntidad.dto;
+package com.primeraentidad.dto;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 public class ProductoDTO {
-
+    private Long id;
     @NotBlank(message = "Nombre obligatorio")
     @Size(max = 100)
     private String nombre;

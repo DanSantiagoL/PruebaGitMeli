@@ -1,4 +1,4 @@
-package com.PrimeraEntidad.clases;
+package com.primeraentidad.clases;
 
 import jakarta.persistence.*;
 import lombok.ToString;

@@ -1,8 +1,8 @@
-package com.PrimeraEntidad.service;
+package com.primeraentidad.service;
 
-import com.PrimeraEntidad.clases.Producto;
-import com.PrimeraEntidad.dto.ProductoDTO;
-import com.PrimeraEntidad.repository.ProductoRepository;
+import com.primeraentidad.clases.Producto;
+import com.primeraentidad.dto.ProductoDTO;
+import com.primeraentidad.repository.ProductoRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -19,19 +19,8 @@ public class ProductoService {
     }
 
     public ProductoDTO crear(ProductoDTO dto){
-        Producto producto = new Producto();
-        producto.setNombre(dto.getNombre());
-        producto.setCategoria(dto.getCategoria());
-        producto.setPrecio(dto.getPrecio());
-
-        Producto guardado = repository.save(producto);
-
-        ProductoDTO resultado = new ProductoDTO();
-        resultado.setNombre(guardado.getNombre());
-        resultado.setCategoria(guardado.getCategoria());
-        resultado.setPrecio(guardado.getPrecio());
-
-        return resultado;
+        Producto guardado = repository.save(toEntity(dto));
+        return toDTO(guardado);
     }
 
     public List<Producto> obtenerTodos() {
@@ -47,7 +36,7 @@ public class ProductoService {
     }
 
     public Page<Producto> buscarActivos(String categoria, Pageable pageable) {
-        return repository.findActivos(categoria, pageable);
+        return repository.findByActivosPaginado(categoria, pageable);
     }
 
     public ProductoDTO actualizar(Long id, ProductoDTO dto) {
@@ -58,13 +47,24 @@ public class ProductoService {
         producto.setCategoria(dto.getCategoria());
         producto.setPrecio(dto.getPrecio());
 
-        Producto guardado = repository.save(producto);
+        return toDTO(repository.save(producto));
 
-        ProductoDTO resultado = new ProductoDTO();
-        resultado.setNombre(guardado.getNombre());
-        resultado.setCategoria(guardado.getCategoria());
-        resultado.setPrecio(guardado.getPrecio());
+    }
 
-        return resultado;
+    private Producto toEntity(ProductoDTO dto) {
+        Producto producto = new Producto();
+        producto.setNombre(dto.getNombre());
+        producto.setCategoria(dto.getCategoria());
+        producto.setPrecio(dto.getPrecio());
+        return producto;
+    }
+
+    private ProductoDTO toDTO(Producto producto) {
+        ProductoDTO dto = new ProductoDTO();
+        dto.setId(producto.getId());
+        dto.setNombre(producto.getNombre());
+        dto.setCategoria(producto.getCategoria());
+        dto.setPrecio(producto.getPrecio());
+        return dto;
     }
 }
