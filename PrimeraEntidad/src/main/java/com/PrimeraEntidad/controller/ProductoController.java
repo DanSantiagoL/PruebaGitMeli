@@ -2,7 +2,6 @@ package com.PrimeraEntidad.controller;
 
 import com.PrimeraEntidad.clases.Producto;
 import com.PrimeraEntidad.dto.ProductoDTO;
-import com.PrimeraEntidad.repository.ProductoRepository;
 import com.PrimeraEntidad.service.ProductoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -12,54 +11,52 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/productos")
 public class ProductoController {
 
     private final ProductoService productoService;
-    private final ProductoRepository productoRepository;
 
-    public ProductoController(ProductoRepository productoRepository,ProductoService productoService) {
-        this.productoRepository = productoRepository;
+    public ProductoController(ProductoService productoService) {
         this.productoService = productoService;
     }
 
     @GetMapping
-    public List<Producto> obtenerTodos() {
-        return productoRepository.findAll();
+    public ResponseEntity<List<Producto>> obtenerTodos() {
+        return ResponseEntity.ok(productoService.obtenerTodos());
     }
 
     @GetMapping("/categoria/{categoria}")
-    public List<Producto> buscarPorCategoria(@PathVariable String categoria) {
-        return productoRepository.findByCategoria(categoria);
+    public ResponseEntity<List<Producto>> buscarPorCategoria(@PathVariable String categoria) {
+        return ResponseEntity.ok(productoService.buscarPorCategoria(categoria));
     }
 
     @GetMapping("/nombre/{nombre}")
-    public Optional<Producto> buscarPorNombre(@PathVariable String nombre) {
-        return productoRepository.findByNombre(nombre);
-    }
-
-    @PostMapping
-    public Producto crearProducto(@RequestBody Producto producto) {
-        return productoRepository.save(producto);
+    public ResponseEntity<Producto> buscarPorNombre(@PathVariable String nombre) {
+        return productoService.buscarPorNombre(nombre)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/activos")
-    public Page<Producto> buscarActivosPorCategoria(
+    public ResponseEntity<Page<Producto>> buscarActivosPorCategoria(
             @RequestParam String categoria,
-            Pageable pageable
-    ) {
-        return productoRepository.findActivos(categoria, pageable);
+            Pageable pageable) {
+        return ResponseEntity.ok(productoService.buscarActivos(categoria, pageable));
     }
 
-    @PostMapping("/crearDTO")
-    public ResponseEntity<ProductoDTO> crear(
-        @Valid @RequestBody ProductoDTO dto) {
+    @PostMapping
+    public ResponseEntity<ProductoDTO> crear(@Valid @RequestBody ProductoDTO dto) {
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(productoService.crear(dto));
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<ProductoDTO> actualizar(@PathVariable Long id, @Valid @RequestBody ProductoDTO dto) {
+        return ResponseEntity.ok(productoService.actualizar(id, dto));
     }
 
 }
