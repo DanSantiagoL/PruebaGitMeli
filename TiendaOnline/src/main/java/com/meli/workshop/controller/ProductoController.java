@@ -29,35 +29,27 @@ public class ProductoController {
     }
 
     @GetMapping
-    public List<Producto> listar() {
-        return service.listar();
+    public ResponseEntity<List<ProductoDTO>> listar() {
+        return ResponseEntity.ok(service.listar());
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Producto> buscar(@PathVariable Long id) {
-        // Ya no maneja el 404 aquí — si el producto no existe, el service lanza
-        // ProductoNotFoundException y el GlobalExceptionHandler devuelve la respuesta estándar.
         return service.buscar(id)
                 .map(ResponseEntity::ok)
                 .orElseThrow(() -> new ProductoNotFoundException(id));
     }
 
     @PostMapping
-    public ResponseEntity<Producto> crear(@RequestBody Producto producto) {
-        Producto creado = service.crear(producto);
+    public ResponseEntity<ProductoDTO> crear(@Valid @RequestBody ProductoDTO dto) {
+        ProductoDTO creado = service.crear(dto);
         URI location = URI.create("/api/productos/" + creado.getId());
         return ResponseEntity.created(location).body(creado);
     }
 
-    @PostMapping("/dto")
-    public ResponseEntity<ProductoDTO> crearDesdeDTO(@Valid @RequestBody ProductoDTO dto) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(dto);
-    }
-
     @PutMapping("/{id}")
-    public ResponseEntity<Producto> actualizar(@PathVariable Long id, @RequestBody Producto datos) {
-
-        return ResponseEntity.ok(service.actualizar(id, datos));
+    public ResponseEntity<ProductoDTO> actualizar(@PathVariable Long id, @Valid @RequestBody ProductoDTO dto) {
+        return ResponseEntity.ok(service.actualizar(id, dto));
     }
 
     @DeleteMapping("/{id}")

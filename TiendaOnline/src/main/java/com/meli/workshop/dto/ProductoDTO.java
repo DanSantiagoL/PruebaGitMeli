@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 public class ProductoDTO {
 
     @NotBlank(message = "Nombre obligatorio")
+    private Long id;
     @Size(max = 100, message = "El nombre no puede tener más de 100 caracteres")
     private String nombre;
 
@@ -23,9 +24,11 @@ public class ProductoDTO {
     public ProductoDTO() {
     }
 
-    public String getNombre() {
-        return nombre;
-    }
+    public Long getId() {return id;}
+
+    public void setId(Long id) {this.id = id;}
+
+    public String getNombre() {return nombre;}
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
